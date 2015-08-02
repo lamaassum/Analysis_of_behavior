@@ -1,8 +1,12 @@
+'''
+This script is to segment the keystrokes and the plaintext of the conversations to two groups corresponding to the interaction mode (agreement/disagreement) and save them in separate files.
+It receives the path of the dataset folder as an argument.
+'''
 import sys
 import os
 import csv
 ############################################################################
-path = sys.argv[1]
+path = sys.argv[1]# Get the dataset folder path
 dirs = os.listdir(path)
 #Arrays to hold the segmentation files (which segment the conversation to agreement/disagreement sections)
 c_sg_files = []

@@ -1,5 +1,5 @@
 '''
-This script is to segment the strokes to two groups corresponding to the gender and save them in separate files.
+This script is to segment the keystrokes and the plaintext of the conversations to two groups corresponding to the gender and save them in separate files.
 It receives the path of the dataset folder as an argument.
 '''
 import sys
