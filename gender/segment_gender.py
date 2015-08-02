@@ -27,7 +27,7 @@ for f in female_files:
 	file = open(f,"rU")
 	reader = csv.reader((line.replace('\0','') for line in file), delimiter=",")
 	for r in reader:
-		f_log.append([id]+r)
+		f_log.append([id]+[r[0],int(r[1])])
 	file.close()
 	
 	
@@ -43,7 +43,7 @@ for f in male_files:
 	file = open(f,"rU")
 	reader = csv.reader((line.replace('\0','') for line in file), delimiter=",")
 	for r in reader:
-		m_log.append([id]+r)
+		m_log.append([id]+[r[0],int(r[1])])
 	file.close()
 	
 	
